@@ -1,0 +1,1875 @@
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('assets/fonts/Manrope-Bold.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('assets/fonts/Manrope-Regular.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('assets/fonts/Manrope-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('assets/fonts/Manrope-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family:'Manrope-Medium';
+    src: url('assets/fonts/Manrope-Medium.ttf') format('ttf');
+}
+
+
+body{
+    top: 0;
+    left: 0;
+    width: 1340px;
+    height: 1123px;
+    background: #F6F7F8;
+    padding-bottom: 20px;
+}
+
+/* nav bar */
+
+#logo-image {
+   top: 50px;
+   left: 30px;
+   width: 211px;
+   height: 48px;
+   opacity: 1;
+   background: transparent 30px 50px  ;
+}
+
+#nav-bar{
+    position:relative;
+    top: 18px;
+    left: 18px;
+    width: 95%;
+    height: 66px;
+    background: #FFFFFF 0% 0% ;
+    border-radius: 70px;
+    padding: 10px 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navbar-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#overview-icon{
+    position:relative;
+    top: 5px;
+    left: 16%; 
+    width: 16px;
+    height: 17px;
+}
+
+#overview {
+    position:relative;
+    top: 6px;
+    left: 17%;
+    width: 60px;
+    height: 16px;
+    font-size: 14px;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;   
+}
+
+#patients-icon {
+    position:relative;
+    top: 2px;
+    left: 17px;
+    width: 24px;
+    height: 17px;
+}
+
+#patients {
+    position: relative;
+    top: 2px;
+    left: 27px;
+    width: 60px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+
+#patients-border {
+    position:relative;
+    top: 4px;
+    left: 200px;
+    width: 117px;
+    height: 33px;
+    background-color: rgba(1, 240, 208, 1);
+    border-radius: 41px;
+    display: flex;
+    align-items: center;
+}
+
+#calendar-icon { /*9px diff*/
+    position:relative;
+    top: 5px;
+    left: 225px;
+    width: 15px;
+    height: 17px;
+}
+
+#schedule{
+    position:relative;
+    top: 6px;
+    left: 236px;
+    width: 60px;
+    height: 16px;
+    color: var(--unnamed-color-072635);
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    color: rgba(7, 38, 53, 1);
+}
+
+#message-icon{
+    position:relative;
+    top: 6px;
+    left: 258px;
+    width: 19px;
+    height: 17px;
+}
+
+#message {
+    position:relative;
+    top: 5px;
+    left: 269px;
+    width: 60px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    color: rgba(7, 38, 53, 1);
+}
+
+#transactions-icon {
+    position:relative;
+    top: 6px;
+    left: 292px;
+    width: 22px;
+    height: 17px;
+}
+
+#transactions {
+    position:relative;
+    top: 6px;
+    left: 302px;
+    width: 60px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    color: rgba(7, 38, 53, 1);
+}
+
+#senior-woman {
+    position:relative;
+    top: 6px;
+    left: 380px;
+    width: 44px;
+    height: 44px;
+}
+
+#Practitioner {
+    position:relative;
+    top: 15px;
+    left: 194px;
+    width: 130px;
+    height: 19px;
+    text-align: left;
+    font: normal;
+    color: rgba(112, 112, 112, 1);
+    font-family: 'Manrope-Regular',sans-serif;
+    font-size: 14px;
+}
+
+#Jose{
+    position:relative;
+    bottom: 2px;
+    left: 394px;
+    width: 200px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    color: rgba(7, 38, 53, 1);
+}
+
+#vertical-divider {
+    position:relative;
+    top: 4px;
+    left:210px;
+    border-left: 2px solid;
+    height: 35px;
+    color:rgba(245,245,245,1);
+}
+
+#more-options {
+    position:relative;
+    top: 3px;
+    left: 235px;
+    width: 4px;
+    height: 18px;
+}
+
+#settings-icon {
+    position:relative;
+    top: 3px;
+    left: 225px;
+    width: 19px;
+    height: 20px;
+}
+
+main{
+    overflow: hidden;
+}
+
+/* side bar 1 */
+
+#side-bar{
+    position:relative;
+    top:50px;
+    left: 18px;
+    width: 350px;
+    height: 1107px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#patients-header {
+    position:relative;
+    top: 7px;
+    left: 19px;
+    width: 70px;
+    height: 20px;
+    text-align: left;
+    font: normal normal 500 24px/33px;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(7, 38, 53, 1);
+}
+
+#search-icon {
+    position: relative;
+    bottom: 55px;
+    left: 320px;
+    width: 16px;
+    height: 16px;
+}
+
+#scroll-bar-dark-3{
+    position: relative; 
+    bottom: 2481px;
+    left: 340px;
+    width: 6px;
+    height: 100px;  
+    background: #072635 ;
+    border-radius: 3px;
+    transform: rotate(180deg);
+}
+
+#scroll-bar-3{
+    position: relative;
+    bottom: 1500px;
+    left: 340px;
+    width: 6px;
+    height: 915px;
+    background: #E3E4E6;
+    border-radius: 3px;
+    transform: rotate(180deg);
+}
+
+#emily-female-18 {
+    position:relative;
+    top: 40px;
+    width: 45px;
+    height: 45px;
+}
+
+#emily {
+    position:relative;
+    bottom: 20px;
+    left: 80px;
+    width: 120px;
+    height: 16px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#female-18 {
+    position: relative;
+    bottom: 30px;
+    left: 80px;
+    width: 100px;
+    height: 10px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-1 {
+    position:relative;
+    bottom:93px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#ryan-male-45 {
+    position:relative;
+    top: 0px;
+    left:10px;
+    width: 48px;
+    height: 48px;
+}
+
+#ryan {
+    position:relative;
+    bottom: 65px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#male-45 {
+    position:relative;
+    bottom: 75px;
+    left: 80px;
+    width: 54px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-2 {
+    position:relative;
+    bottom:148px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#brandon-male-36 {
+    position:relative;
+    bottom: 50px;
+    left:10px;
+    width: 48px;
+    height: 48px;
+}
+
+#brandon {
+    position:relative;
+    bottom: 114px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#male-36 {
+    position:relative;
+    bottom: 123px;
+    left: 80px;
+    width: 54px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-3 {
+    position:relative;
+    bottom:167px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#jessica-female-28 {
+    position:relative;
+    top: 15px;
+    left:16px;
+    width: 48px;
+    height: 48px;
+}
+
+#jessica {
+    position:relative;
+    bottom: 50px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#female-28{
+    position:relative;
+    bottom: 62px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#jessica-border{
+    background-color: rgba(216, 252, 247, 1);
+    position:relative;
+    bottom:140px;
+    width: 100%;
+    height: 80px;
+
+}
+
+#more-options-4{
+    position:relative;
+    bottom:105px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#samantha-female-56{
+    position:relative;
+    bottom: 115px;
+    left:16px;
+    width: 48px;
+    height: 48px;
+}
+
+#samantha{
+    position:relative;
+    bottom: 182px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#female-56{
+    position:relative;
+    bottom: 190px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-5{
+    position:relative;
+    bottom:265px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#ashley-female-54{
+    position:relative;
+    bottom: 165px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#ashley{
+    position:relative;
+    bottom: 228px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#ashley-54{
+    position:relative;
+    bottom: 234px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-6{
+    position:relative;
+    bottom:310px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#olivia-female-32{
+    position:relative;
+    bottom: 215px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#olivia{
+    position:relative;
+    bottom: 278px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#olivia-32{
+    position:relative;
+    bottom: 285.5px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-7{
+    position:relative;
+    bottom:362px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#tyler-male-19{
+        position:relative;
+        bottom: 265px;
+        left: 10px;
+        width: 48px;
+        height: 48px;
+}
+
+#tyler{
+    position:relative;
+    bottom: 327px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#tyler-19{
+    position:relative;
+    bottom: 335px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-8{
+    position:relative;
+    bottom:409px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#kevin-male-30{
+    position:relative;
+    bottom: 315px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#kevin{
+    position:relative;
+    bottom: 378px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#kevin-30{
+    position:relative;
+    bottom: 388px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-9{
+    position:relative;
+    bottom:461px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#dylan-male-36{
+    position:relative;
+    bottom: 365px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#dylan{
+    position:relative;
+    bottom: 428px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#dylan-36{
+    position:relative;
+    bottom: 437px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-10{
+    position:relative;
+    bottom:510px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#nathan-male-58{
+    position:relative;
+    bottom: 415px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#nathan{
+    position:relative;
+    bottom: 478px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#nathan-58{
+    position:relative;
+    bottom: 487px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-11{
+    position:relative;
+    bottom:562px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+#mike-male-31{
+    position:relative;
+    bottom: 465px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#mike{
+    position:relative;
+    bottom: 528px;
+    left: 80px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-SemiBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    font-weight:552;
+}
+
+#mike-31{
+    position:relative;
+    bottom: 538px;
+    left: 80px;
+    width: 80px;
+    height: 19px;
+    text-align: left;
+    font: normal ;
+    font-family: 'Manrope-Regular', sans-serif;
+    color: rgba(112, 112, 112, 1);
+    font-size:14px ;
+}
+
+#more-options-12{
+    position:relative;
+    bottom:588px;
+    left:320px;
+    width:4px;
+    height: 18px;
+    transform: rotate(90deg);
+}
+
+/* Diagnosis History */
+
+#divider-2{
+    position: absolute;
+    top:145px;
+    left:29%;
+    width: 570px;
+    height: 647px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+#diagnosis-history{
+    position: relative;
+    padding:10px 25px;
+    width: 320px;
+    height: 33px;
+    text-align: left;
+    font-weight:800;
+    font-size: 24px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+#chart{
+    position:relative;
+    top:0px;
+    left:20px;
+    width:532px;
+    height:280px;
+    background-color: rgba(244, 240, 254, 1);
+    border-radius:12px;
+}
+
+#blood-pressure{
+    position: relative;
+    top: 23px;
+    left: 18px;
+    width: 170px;
+    height: 24px;
+    text-align: left;
+    font-weight: bold;
+    font-size:18px;
+    font-family:'Manrope-Bold',sans-serif;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#months{
+    position:relative;
+    bottom:12px;
+    left: 240px;
+    width: 92px;
+    height: 19px;
+    text-align: right;
+    font-weight:549;
+    font-family:'Manrope-Regular',sans-serif;
+    font-size:14px;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#expand-icon{
+    position:relative;
+    bottom: 48.5px;
+    left: 340px;
+    width: 11px;
+    height: 6px;
+}
+
+canvas{
+    position: relative;
+    bottom:520px;
+    left:15px;
+    width:160px;
+    height: 200px;
+    max-height: 220px;
+    max-width:360px;
+}
+
+#pink-circle{
+    position: relative;
+    bottom: 70px;
+    left: 390px;
+    width: 14px;
+    height: 14px;
+    background: rgba(230, 111, 210, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#systolic{
+    position: relative;
+    bottom: 100px;
+    left: 417px;
+    width: 55px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-Bold',sans-serif;
+    font-weight: bold;
+    font-size:14px;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    text-transform: capitalize;
+    opacity: 1;
+    
+}
+
+#arrowup-icon{
+    position: relative;
+    bottom:127px;
+    left: 394px;
+    width: 10px;
+    height: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 1;
+}
+
+#horizontal-divider-3{
+    position:relative;
+    bottom:210px;
+    left:450px;
+    background-color: rgba(209, 213, 202, 1);
+    border-radius: 10px;
+    width:2px;
+    height: 140px;
+    transform: rotate(90deg);
+}
+
+#sys-value{
+    position:relative;
+    bottom:110px;
+    left: 391px;
+    width: 38px;
+    height: 30px;
+    text-align: left;
+    font-weight:bold;
+    font-size:22px;
+    font-family: 'Manrope-Bold',sans-serif;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#sys-level{
+    position:relative;
+    bottom: 153px;
+    left: 411px;
+    width: 131px;
+    height: 19px;
+    text-align: left;
+    font-weight:normal;
+    font-family: 'Manrope-Regular',sans-serif;
+    font-size:12px;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#blue-circle{
+    position: relative;
+    bottom: 250px;
+    left: 390px;
+    width: 14px;
+    height: 14px;
+    background: rgba(140, 111, 230, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#diastolic{
+    position: relative;
+    bottom: 280px;
+    left: 417px;
+    width: 55px;
+    height: 19px;
+    text-align: left;
+    font-family:'Manrope-Bold',sans-serif;
+    font-weight: bold;
+    font-size:14px;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#arrowdown-icon{
+    position: relative;
+    bottom:310px;
+    left: 394px;
+    width: 10px;
+    height: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 1;
+}
+
+#dia-value{
+    position:relative;
+    bottom:290px;
+    left: 391px;
+    width: 38px;
+    height: 30px;
+    text-align: left;
+    font-weight:bold;
+    font-size:22px;
+    font-family: 'Manrope-Bold',sans-serif;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#dia-level{
+    position:relative;
+    bottom: 335px;
+    left: 411px;
+    width: 131px;
+    height: 19px;
+    text-align: left;
+    font-weight:normal;
+    font-family: 'Manrope-Regular',sans-serif;
+    font-size:12px;
+    letter-spacing: 0px;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#respire{
+    position:relative;
+    bottom: 480px;
+    left: 4px;
+    width: 160px;
+    height: 242px;
+    background-color: #E0F3FA ;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+#lungs-image{
+    position: relative;
+    top: 10px;
+    left: 9px;
+    width: 90px;
+    height: 90px;
+    opacity: 1;
+}
+
+#respire-rate{
+    position: relative;
+    top: 10px;
+    left: 9px;
+    width: 125px;
+    height: 22px;
+    text-align: left;
+    font-weight:470;
+    font-size:15px;
+    font-family:'Manrope-Medium',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#values1{  
+    position: relative;
+    bottom: 14px;
+    left: 9px;
+    width: 130px;
+    height: 41px;
+    text-align: left;
+    font-size: 25px;
+    font-weight:800;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    letter-spacing: 0.2px;
+    color: #072635;
+    opacity: 1;
+}
+
+#levels1{
+    position:relative;
+    bottom: 10px;
+    left: 9px;
+    width: 46px;
+    height: 19px;
+    text-align: left;
+    font-weight:400;
+    font-size:13px;
+    font-family:'Manrope-Regular',sans-serif;
+    letter-spacing: 0.2px;
+    color: #072635;
+    opacity: 1;
+}
+
+#temp{
+    position: relative;
+    bottom:722px;
+    left: 185px;
+    width: 160px;
+    height: 242px;
+    background: #FFE6E9;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+#temperature-image{
+    position: relative;
+    top: 11px;
+    left: 9px;
+    width: 88px;
+    height: 88px;
+    opacity: 1;
+}
+
+#temp-rate{
+    position: relative;
+    top: 10px;
+    left: 9px;
+    width: 125px;
+    height: 22px;
+    text-align: left;
+    font-weight:470;
+    font-size:15px;
+    font-family:'Manrope-Medium',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#values2{
+    position: relative;
+    bottom: 14px;
+    left: 9px;
+    width: 150px;
+    height: 41px;
+    text-align: left;
+    font-size: 25px;
+    font-weight:800;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+#levels2{
+    position:relative;
+    bottom: 10px;
+    left: 9px;
+    width: 46px;
+    height: 19px;
+    text-align: left;
+    font-weight:400;
+    font-size:13px;
+    font-family:'Manrope-Regular',sans-serif;
+    letter-spacing: 0.3px;
+    color: #072635;
+    opacity: 1;
+}
+
+#heart{
+    position: relative;
+    bottom: 964px;
+    left: 369px;
+    width: 160px;
+    height: 242px;
+    background: #FFE6F1;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+#heart-image{
+    position: relative;
+    top: 11px;
+    left: 9px;
+    width: 86px;
+    height: 86px;
+    opacity: 1;
+}
+
+#heart-rate{
+    position: relative;
+    top: 10px;
+    left: 9px;
+    width: 125px;
+    height: 22px;
+    text-align: left;
+    font-weight:470;
+    font-size:15px;
+    font-family:'Manrope-Medium',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#values3{
+    position: relative;
+    bottom: 14px;
+    left: 9px;
+    width: 150px;
+    height: 41px;
+    text-align: left;
+    font-size: 25px;
+    font-weight:800;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+#arrowdown-icon-1{
+    position: relative;
+    bottom:11.8px;
+    left: 11px;
+    width: 10px;
+    height: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 1; 
+}
+
+#levels3{
+    position:relative;
+    bottom: 37px;
+    left: 27px;
+    width: 130px;
+    height: 19px;
+    text-align: left;
+    font-weight:470;
+    font-size:12px;
+    font-family:'Manrope-Regular',sans-serif;
+    letter-spacing: 0.3px;
+    color: #072635;
+    opacity: 1;
+}
+
+/* Personal user info */
+
+#user_info{
+    position: relative;
+    bottom: 1055px;
+    left: 72.7%;
+    width: 367px;
+    height: 720px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#name {
+    position: relative;
+    top: 50px;
+    left: 110px;
+    width: 164px;
+    height: 33px;
+    text-align: center;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: #072635;
+    font-size: x-large;
+    font-weight: 552;
+}
+
+#image {
+    position: relative;
+    top: 50px;
+    left: 110px;
+    width: 150px;
+    height: 150px;
+}
+
+#birth_icon{
+    position:relative;
+    top: 60px;
+    left: 30px;
+    width: 42px;
+    height: 42px;
+}
+
+#dob {
+    position:relative;
+    top: 0px;
+    left: 87px;
+    width: 100px;
+    height: 19px;
+    text-align: left;
+    font-family: 'Manrope-Medium',sans-serif;
+    font-weight: medium;
+    font-size: 15px;
+    color: #072635;
+    text-transform: capitalize;  
+}
+
+#dob-data {
+    position:relative;
+    bottom: 9px;
+    left: 87px;
+    width: 130px;
+    height: 19px;
+    text-align: left;
+    color: #072635;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-weight: bold;
+}
+
+#gender_icon {
+    position:relative;
+    top: 10px;
+    left: 30px;
+    width: 42px;
+    height: 42px;
+}
+
+#gender { 
+    position:relative;
+    bottom:50px;
+    left: 87px;
+    width: 48px;
+    height: 19px;
+    text-align: left;
+    font-family: 'Manrope-Medium',sans-serif;
+    font-weight: medium;
+    font-size: 15px;
+    color: #072635;
+    text-transform: capitalize;  
+}
+
+#gender-data {
+    position:relative;
+    bottom: 60px;
+    left: 87px;
+    width: 48px;
+    height: 19px;
+    text-align: left;
+    color: #072635;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-weight: bold;
+}
+
+#phone_icon {
+    position:relative;
+    bottom: 40px; /* add 50px*/
+    left: 30px;
+    width: 42px;
+    height: 42px;
+}
+
+#phone {
+    position:relative;
+    bottom:100px; /* add 50*/
+    left: 87px;
+    width: 86px;
+    height: 19px;
+    text-align: left;
+    font-family: 'Manrope-Medium',sans-serif;
+    font-weight: medium;
+    font-size: 15px;
+    color: #072635;
+    text-transform: capitalize;  
+}
+
+#phone-data {
+    position:relative;
+    bottom: 111px;/*add 51 to get new bottom position*/
+    left: 87px;
+    width: 130px;
+    height: 19px;
+    text-align: left;
+    color: #072635;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-weight: bold;
+}
+
+#insurance_icon{
+    position:relative;
+    bottom: 90px; /* minus 50px*/
+    left: 30px;
+    width: 42px;
+    height: 42px;
+}
+
+#insurance {
+    position:relative;
+    bottom:150px; /* add 50*/
+    left: 87px;
+    width: 140px;
+    height: 19px;
+    text-align: left;
+    font-family: 'Manrope-Medium',sans-serif;
+    font-weight: medium;
+    font-size: 15px;
+    color: #072635;
+    text-transform: capitalize;  
+}
+
+#insurance-data {
+    position:relative;
+    bottom: 162px;/*add 51 to get new bottom position*/
+    left: 87px;
+    width: 190px;
+    height: 19px;
+    text-align: left;
+    color: #072635;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-weight: bold;
+}
+
+#button {
+    position:relative;
+    bottom:120px;
+    left: 75px;
+    width: 230px;
+    height: 41px;
+    background: #01F0D0;
+    border-radius: 41px;
+    border:none;
+    text-align: center;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-weight: 600;
+    color: #072635;
+    font-size: 15px;
+}
+
+/*Lab Results*/
+
+#Lab-results {
+    position: relative;
+    bottom: 1000px;
+    left: 72.7%;
+    width: 367px;
+    height: 296px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#Lab-results p{
+    padding-left: 10px;
+}
+
+#scroll-bar{
+    position: relative;
+    top: 10px;
+    left: 340px;
+    width: 6px;
+    height: 207px;
+    background: #E3E4E6;
+    border-radius: 3px;
+    transform: rotate(180deg);
+}
+
+#scroll-bar-dark{
+    position: relative; 
+    bottom: 197px;
+    left: 340px;
+    width: 6px;
+    height: 51px;  
+    background: #072635 ;
+    border-radius: 3px;
+    transform: rotate(180deg);
+}
+
+#lab_results {
+    position: relative;
+    top: 8px;
+    left: 30px;
+    width: 200px;
+    height: 33px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #072635;
+    font-family:'Manrope-ExtraBold',sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+#blood-tests {
+    position:relative;
+    bottom: 250px;
+    left: 40px;
+    width: 100px;
+    height: 18px;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight:400;
+    font-family: 'Manrope-Regular',sans-serif;
+    color: #072635;
+    text-transform: capitalize;
+}
+
+#download-icon-1 {
+    position: relative;
+    bottom:285px;
+    left:290px;
+}
+
+#divider-1{
+    position:relative;
+    top:40px;
+    left:30px;
+    background-color: rgba(246, 247, 248, 1);
+    width: 315px;
+    height: 40px;
+}
+
+#ct-scans{
+    position:relative;
+    bottom: 305px;
+    left: 13px;
+    width: 90px;
+    height: 19px;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Manrope-Regular',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+}
+
+#download-icon-2 {
+    position: relative;
+    bottom:345px;
+    left:260px;
+}
+
+#radiology-reports {
+    position:relative;
+    bottom: 270px;
+    left: 43px;
+    width: 150px;
+    height: 19px;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Manrope-Regular',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+}
+
+#download-icon-3 {
+    position: relative;
+    bottom:308px;
+    left:290px;
+}
+
+#x-rays{
+    position:relative;
+    bottom: 290px;
+    left: 42px;
+    width: 118px;
+    height: 19px;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Manrope-Regular',sans-serif;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+}
+
+#download-icon-4 {
+    position: relative;
+    bottom:330px;
+    left:290px;
+}   
+
+/* Diagnosis List */
+
+#diagnosis{
+    position: relative;
+    bottom: 1400px;
+    left: 379px;
+    width: 577px;
+    height: 450px;
+    background: rgba(255, 255, 255, 1) ;
+    border-radius: 16px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+#diagnostic {
+    position: relative;
+    left: 10px;
+    padding: 20px;
+    width: 270px;
+    height: 33px;
+    text-align: left;
+    font-weight: 800;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: #072635;
+}
+
+#scroll-bar-dark-2{
+    position: relative; 
+    bottom: 190px;
+    left: 555px;
+    width: 6px;
+    height: 100px;  
+    background: #072635 ;
+    border-radius: 3px;
+    transform: rotate(180deg);
+}
+
+#scroll-bar-2{
+    position: relative;
+    top: 25px;
+    left: 555px;
+    width: 6px;
+    height: 207px;
+    background: #E3E4E6;
+    border-radius: 3px;
+    transform: rotate(180deg);
+}
+
+#background { 
+    position:relative;
+    top: 0px;
+    left: 25px;
+    width: 540px;
+    height: 48px;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#problems { 
+    position:relative;
+    text-align: left;
+    left: 20px;
+    font-weight: 580;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color:rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#descript {
+    position:relative;
+    text-align: left;
+    left: 55px;
+    font-weight: 580;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color:rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#staus {
+    position:relative;
+    text-align: left;
+    left: 190px;
+    font-weight: 580;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color:rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#line-1 {
+    position:relative;
+    bottom: 290px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#hypertension {
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#description {
+    position: relative;
+    text-align: left;
+    left: 93px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#status {
+    position: relative;
+    text-align: left;
+    left: 136px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 20px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#horizontal-divider {
+    position:relative;
+    bottom: 540px; /*45 px*/
+    left:289px;
+    border-left: 2px solid;
+    height: 500px;
+    width:2px;
+    color: rgba(245,245,245,1); 
+    transform: rotate(90deg); 
+}
+
+#line-2 {
+    position:relative;
+    bottom: 785px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#diabetes {
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;  
+}
+
+#description-1{
+    position: relative;
+    text-align: left;
+    left: 75px;
+    font-weight: 500;
+    width: 150px;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#status-1{
+    position: relative;
+    text-align: left;
+    left: 155px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#horizontal-divider-1{
+    position:relative;
+    bottom: 1030px;
+    left:289px;
+    border-left: 2px solid;
+    height: 500px;
+    width:2px;
+    color: rgba(245,245,245,1);
+    transform: rotate(90deg);    
+}
+
+#line-3{
+    position:relative;
+    bottom: 1280px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#asthma{
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;  
+}
+
+#description-2{
+    position: relative;
+    text-align: left;
+    left: 130px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 150px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#status-2{
+    position: relative;
+    text-align: left;
+    left: 210px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#horizontal-divider-2 {
+    position:relative;
+    bottom: 1528px;
+    left:289px;
+    border-left: 2px solid;
+    height: 500px;
+    width:2px;
+    color: rgba(245,245,245,1);
+    transform: rotate(90deg);   
+}
+
+#line-4{
+    position:relative;
+    bottom: 1778px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#osteo{
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1; 
+}
+
+#description-3{
+    position: relative;
+    text-align: left;
+    left: 90px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
+
+#status-3{
+    position: relative;
+    text-align: left;
+    left: 145px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Manrope-ExtraBold',sans-serif;
+    color: rgba(7, 38, 53, 1);
+    opacity: 1;
+}
